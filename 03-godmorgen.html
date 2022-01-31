@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //browseren bruger default tidszone som er på ens desktop
+      const d = new Date();
+
+      // få fat i tiden
+      let time = d.getHours();
+      let resultat;
+
+      //mellem kl. 5 og kl 10
+      if (time > 5 && time < 10) {
+        resultat = "Godmorgen";
+
+        // mellem kl 10 og 18
+      } else if (time < 18) {
+        resultat = "Goddag";
+
+        // mellem kl 18 0g 24
+      } else if (time < 24) {
+        resultat = "Godaften";
+
+        //mellem kl 24 0g 5
+      } else {
+        resultat = "Godnat";
+      }
+
+      console.log(resultat);
+    </script>
+  </body>
+</html>
