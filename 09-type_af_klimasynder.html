@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let timer = 3;
+      let co2 = 109;
+      let udledt = timer * co2;
+      let resultat1 = `Ved ${timer} timers flyrejse har du udledt ${udledt}kg Co2`;
+
+      //mindre end 100
+      if (udledt < 100) {
+        resultat = "Tæt på Thunberg";
+
+        //mellem 100 og 200
+      } else if (udledt <= 200) {
+        resultat = "Ja ja, du behøver ikke at melde dig ud af Å!";
+
+        //mellem 200 og 600
+      } else if (udledt >= 201 && udledt < 600) {
+        resultat = "Det er godt for turismen i nordeuropa.";
+
+        //mere end 600
+      } else {
+        resultat = "Nå ja vi kan jo altid kolonisere en anden planet ...";
+      }
+
+      console.log(resultat1, resultat);
+    </script>
+  </body>
+</html>
